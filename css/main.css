@@ -1,3 +1,141 @@
-*{margin: 0 auto; text-align: center;}
-h1{background-color: rgb(168, 123, 204);}
-.content{width:1200px; height:auto; border: 1px solid black;}
+* {
+    /*전체설정*/
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+nav {
+    /*nav전체 프레임*/
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo {
+    /*네브 로고 레이아웃 박스*/
+    width: 200px;
+    height: 70px;
+}
+
+#logo img {
+    /*이미지 크기*/
+    width: 70px;
+    height: 70px;
+
+}
+
+#main_menu {
+    /*NAV의 메뉴부분*/
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#main_menu li {
+    /*각각 메뉴 li*/
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    line-height: 70px;
+
+
+}
+
+#main_menu li a {
+    /*버튼부위 확장*/
+    display: block;
+}
+
+.menu_btn {
+    /*모바일 메뉴버튼{햄버거버튼}*/
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    margin: 0px;
+
+}
+
+.menu_btn div {
+    /*메뉴 애니메이션*/
+    border-bottom: 3px solid rgb(84, 84, 84);
+    transition: 0.6s;
+
+}
+
+
+.btn_box {
+    /*버튼 박스*/
+    width: 250px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_box {
+    /*햄버거 메뉴콘텐츠*/
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.5s;
+    opacity: 25%;
+    color: white;
+}
+
+@media(max-width:780px) {
+
+    /*모바일크기 레이아웃*/
+    #main_menu {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+
+
+    }
+
+    .menu_btn {
+        margin-right: 20px;
+    }
+
+    #logo {
+        width: 80%;
+    }
+
+    .menu_box {
+        width: 100%;
+    }
+
+
+
+}
+
+@media(min-width:780px) {
+
+    /*데스크톱 크기 레이아웃*/
+    .menu_btn {
+
+        transition: 0.6s;
+
+
+
+    }
+}
