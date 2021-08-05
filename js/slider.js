@@ -6,11 +6,11 @@ const realSlideCount = slide.length;
 
 
 
-/*
+
 setInterval(() => {
     next_btn();
 }, 4000);
-*/
+
 //---------------li요소복사부분-----------------
 makeClone();
 
