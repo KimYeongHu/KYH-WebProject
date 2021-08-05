@@ -1,4 +1,3 @@
-window.onload = function () {
     const line0 = document.getElementById('line0');
     const line1 = document.getElementById('line1');
     const line2 = document.getElementById('line2');
@@ -31,10 +30,3 @@ window.onload = function () {
 
     });//메뉴확장
     
-
-
-
-
-
-
-}

@@ -6,11 +6,11 @@ const realSlideCount = slide.length;
 
 
 
-
+/*
 setInterval(() => {
     next_btn();
 }, 4000);
-
+*/
 //---------------li요소복사부분-----------------
 makeClone();
 
@@ -48,11 +48,12 @@ let sliderVlaue = 0; //슬라이드 될 값
 
 console.log("아이템갯수:"+item_total);
 
+/*
 for(let i=0; i<slide.length; i++)
     {
         slide[i].style.transform = 'translateX(-2000px)';  //-2000px 
     }
-
+*/
 
 const next_btn = () => {//다음버튼
 

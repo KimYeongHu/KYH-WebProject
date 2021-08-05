@@ -166,5 +166,14 @@ nav {
 
 
     }
+    .btn_box {
+        /*버튼 박스*/
+        width: 250px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-right:-23px;
+    }
 }
 
