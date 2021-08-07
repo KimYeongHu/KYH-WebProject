@@ -1,29 +1,26 @@
 
-.wrap{
-    margin:0 auto;
-    width: 1200px;;
-    height:auto;
-   margin-top: 10px;
-   
 
-}
-.container {
-    margin:0 auto;
-    xbackground-color: rgb(179, 179, 179);
-    width: 1190px;
-    height:400px;
-    position: relative;
-    overflow: hidden;
-
-}
 .containerWrap{
     margin:0 auto;
-    xbackground-color: rgb(235, 23, 23);
-    width: 1190px;
+    width: 1200px;
     height:400px;
-    
     position: relative;
+    top:75px;
+  
+    
 }
+
+.container {
+    margin:0 auto;
+    width: 1200px;
+    height:400px;
+    overflow: hidden;
+    border-radius: 5px;
+    
+    
+    
+}
+
 
 .btn_next{
     text-align: center;
@@ -31,11 +28,10 @@
     font-weight: bold;
     width:50px;
     height:50px;
-    xbackground-color: rgb(84, 13, 190);
     position:absolute;
     right:-50px;
-    top:50%;
-    transform: translate(0,-50%);
+    top: 150px;;
+    
     cursor: pointer;
 }
 
@@ -45,11 +41,10 @@
     font-weight: bold;
     width:50px;
     height:50px;
-    xbackground-color: rgb(206, 73, 73);
     position:absolute;
-    top:50%;
+    top:150px;
     left:-50px;
-    transform: translate(0,-50%);
+    
     cursor: pointer;
 }
 
@@ -62,31 +57,22 @@
 
 #item_box{
     border-radius: 50px;
-    width: 400px; /*400px*/
-    height: 400px;
-    
+    width: 300px;
+    /*수정포인트 */
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-2000px);
-}
-
-
-
-/*
-.slider > li:nth-child(2n){
-    background-color: #777777;
    
 }
-.slider > li:nth-child(2n-1){
-    background-color: #ffffff;
-}
-*/
-#item_content{
-    width: 390px;/*390px*/
-    margin-right: 10px;
-    height:400px;
 
+
+#item_content{
+    width: 300px;/*수정포인트 */
+    margin-left:5px;
+    margin-right: 5px;
+    height:300px;
+    border-radius: 5px;
 }
 
 #item_content:nth-child(2n-1)
@@ -102,88 +88,56 @@
     
     
 }
-@media(max-width:1024px) {
-    .container {
-        margin:0 auto;
-        xbackground-color: rgb(179, 179, 179);
-        width: 390px;
-        height:400px;
-        position: relative;
-        overflow: hidden;
-    
-    }
-    .containerWrap{
-        margin:0 auto;
-        xbackground-color: rgb(235, 23, 23);
-        width: 390px;
-        height:400px;
-        
-        position: relative;
-    }
-    .wrap{
-        margin:0 auto;
-        width: 100%;
-        height:auto;
-       margin-top: 10px;
-       
-    
-    }
-    
 
+
+
+
+@media(max-width:1300px) {
+    
+    .containerWrap{
+        width:900px;
+    }
+    .container{
+        width:900px;
+    }
 }
 
-@media(max-width:375px) {
-    .container {
-        margin:0 auto;
-        xbackground-color: rgb(179, 179, 179);
-        width: 290px;
-        height:300px;
-        position: relative;
-        overflow: hidden;
+@media(max-width:1300px) {
     
-    }
     .containerWrap{
-        margin:0 auto;
-        xbackground-color: rgb(235, 23, 23);
-        width: 290px;
-        height:300px;
-        
-        position: relative;
+        width:900px;
     }
-    .wrap{
-        margin:0 auto;
-        width: 100%;
-        height:auto;
-       margin-top: 10px;
-       
+    .container{
+        width:900px;
+    }
+}
+
+@media(max-width:720px) {
     
+    .containerWrap{
+        width:300px;
+    }
+    .container{
+        width:300px;
+    }
+}
+@media(max-width:410px) {
+    
+    .containerWrap{
+        width:200px;
+    }
+    .container{
+        width:200px;
     }
     #item_box{
-        border-radius: 50px;
-        width: 400px; /*400px*/
-        height: 400px;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateX(-1500px);
+        width: 200px;
+        height: 200px;
+        /*수정포인트 */
     }
-
     #item_content{
-        width: 290px;/*390px*/
-        margin-right: 10px;
-        height:300px;
-    
+        width: 200px;/*수정포인트 */
+        height: 200px;
     }
-
-    #item_box{
-        border-radius: 50px;
-        width: 300px; /*400px*/
-        height: 300px;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
+    .btn_next{top:75px;}
+    .btn_prev{top:75px;}
 }

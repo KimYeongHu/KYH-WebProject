@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <link href="css/CssReset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/slider.css">
@@ -12,8 +13,9 @@
     <title>데일리베베</title>
 </head>
 
-<body>
-    <div class="nav_wrap">
+<body style="overflow-x:hidden">
+<div class="wrap">
+    <header class="nav_wrap">
         <nav>
             <div id="logo"><img src="images/dailybb.PNG"></div>
 
@@ -38,20 +40,23 @@
             </div>
 
         </nav>
-    </div>
+    </header>
+    
 
-    <div class="menu_box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt excepturi reiciendis
+    <aside class="menu_box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt excepturi reiciendis
         fugiat
         eveniet. Necessitatibus sint praesentium commodi culpa dolorum eum voluptate quisquam nobis laudantium, esse
         nulla numquam incidunt placeat eius?</div>
 
-    </div>
+    </aside>
     
-    <div class="wrap">
+    
+    <section class = slideSection>
 
+    
         <div class="containerWrap">
             <div class="container">
-
+                
                 <ul class="slider">
                     <li id="item_box">
                         <div id="item_content">1</div>
@@ -69,11 +74,13 @@
                         <div id="item_content">5</div>
                     </li>
                 </ul>
-
             </div>
             <div class="btn_next">></div>
             <div class="btn_prev"><</div>
         </div>
+
+    </section>
+
         <script src="js/main.js"></script>
         <script src="js/slider.js"></script>
         

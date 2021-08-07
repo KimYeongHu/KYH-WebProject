@@ -13,7 +13,6 @@ setInterval(() => {
 
 //---------------li요소복사부분-----------------
 makeClone();
-
 function makeClone()
 {
     for(let i=0; i<slide.length; i++)
@@ -44,16 +43,16 @@ let item_total = slide.length;//아이템의 개수
 const itemWidth = document.querySelector('#item_box').offsetWidth;//아이템의 크기
 let count = 5;  //카운트 시작위치는 5 1200=4? mola 임 가운데부터 시작하기 때문
 let sliderVlaue = 0; //슬라이드 될 값
-
+const startSlidePosition = realSlideCount * itemWidth;
 
 console.log("아이템갯수:"+item_total);
 
-/*
+
 for(let i=0; i<slide.length; i++)
     {
-        slide[i].style.transform = 'translateX(-2000px)';  //-2000px 
+        slide[i].style.transform = `translateX(-${startSlidePosition}px)`;  //-2000px realSlideCount *  itemWidth
     }
-*/
+
 
 const next_btn = () => {//다음버튼
 
